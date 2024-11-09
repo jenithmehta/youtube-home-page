@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>youtube.com</title>
+		<style>
+			p {
+				font-family: Roboto, Arial;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.middle-section {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				max-width: 470px;
+				margin-left: 60px;
+			}
+			.search-bar {
+				flex: 1;
+				height: 40px;
+				padding-left: 12px;
+				font-size: 16px;
+				font: Roboto;
+				border: 1px solid #cccccc;
+				border-top-left-radius: 2px;
+				border-bottom-left-radius: 2px;
+				box-shadow: inset 0px 1px 2px #eeeeee;
+			}
+			.search-button {
+				width: 64px;
+				height: 40px;
+				border: 1px solid #cccccc;
+				border-top-right-radius: 2px;
+				border-bottom-right-radius: 2px;
+				flex: 0.2;
+				padding: 1px 6px;
+				margin-right: 8px;
+			}
+			.search-button img {
+				height: 24px;
+			}
+			.thumbnail {
+				width: 300px;
+				display: block;
+			}
+			.video-title {
+				color: rgb(0, 0, 0);
+				font-size: 14px;
+				font-weight: 500;
+				line-height: 18px;
+				margin-bottom: 10px;
+			}
+			.channel-name,
+			.video-stats {
+				color: #606060;
+				font-size: 12px;
+			}
+			.channel-name {
+				margin-bottom: 4px;
+			}
+			.video-preview {
+				width: 300px;
+				display: inline-block;
+				vertical-align: top;
+				margin-right: 15px;
+				margin-top: 15px;
+			}
+			.thumbnail-row {
+				margin-bottom: 12px;
+			}
+			.channel-picture {
+				display: inline-block;
+				width: 50px;
+				vertical-align: top;
+			}
+			.video-info {
+				display: inline-block;
+				width: 200px;
+				vertical-align: top;
+			}
+			.profile-picture {
+				width: 40px;
+				border-radius: 50px;
+			}
+		</style>
+		<body>
+			<div class="middle-section">
+				<input class="search-bar" type="text" placeholder="Search" />
+				<button class="search-button"><img src="icons/search.svg" /></button>
+			</div>
+			<div class="video-preview">
+				<div class="thumbnail-row"><img class="thumbnail" src="thumbnails/thumbnail-1.webp" /></div>
+				<div>
+					<div class="channel-picture"><img class="profile-picture" src="channel-pics/channel-1.jpeg" alt="" /></div>
+					<div class="video-info">
+						<p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+						<p class="channel-name">Marques Brownlee</p>
+						<p class="video-stats">3.4M views · 6 months ago</p>
+					</div>
+				</div>
+			</div>
+			<div class="video-preview">
+				<div class="thumbnail-row"><img class="thumbnail" src="thumbnails/thumbnail-2.webp" /></div>
+				<div>
+					<div class="channel-picture"><img class="profile-picture" src="channel-pics/channel-2.jpeg" alt="" /></div>
+					<div class="video-info">
+						<p class="video-title">Try Not To Laugh Challenge #9</p>
+						<p class="channel-name">Markiplier</p>
+						<p class="video-stats">19M views · 4 years ago</p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</head>
+</html>

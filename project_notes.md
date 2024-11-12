@@ -73,3 +73,12 @@
   ![alt text](../misc/layout-example.png)
 - Note: divs by default take up 100% width so they do not appear side by side even when selected display: inline-block. In such cases, need to reduce the width to accomodate both the divs
 - images by default overflow div. For this create a class for image and set it to 100%. So the image would occupy the 100% width of its container i.e. div
+
+> Grids have much better alignment than inline blocks
+
+- display: grid;
+- grid-template-columns: 100px 100px;
+  this will create 2 columns each of 100px
+- grid-template-columns: 100px 1fr;
+  fr stands for free space
+  this will create 2 columns, one of 100px and second column of the remaining width available in the container.

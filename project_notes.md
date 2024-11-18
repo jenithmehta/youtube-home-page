@@ -1,5 +1,7 @@
 ### Title: HTML & CSS Notes
 
+> > NOTE: If struggling with some css implementation, try to implement it in a new html on a small scale
+
 > Q. What are void elements in html?
 
 - Elements that do not require closing tags are called void elements, example. link, br
@@ -28,13 +30,26 @@
 - there are 2 axis, main axis and one that runs perpendicular to it.
 - main axis is represented by flex-direction property
 - other one cross-axis
-- main-axis can take 4 values
+- flex-direction can take 4 values
   - row, row-reverse, column and column-reverse
   - row will align along the x-axis
   - whereas column will align the elements along the y-axis
   - we have reverse options because flex does not want to assume the direction of the next element
 - area under flex-box is called flex-container
 - once a div is set to flex, then its child items automatically become flex-items
+- flex: 1, this is equivalent to 1fr of grid. Basically div takes the rest of available space
+- justify-content: this property helps in aligning flex items in the direction of flex. for row flex, it aligns items horizontally.
+
+  - center, aligns them at center
+  - start,end are other options
+  - space-between aligns to spread across the container equally
+
+- align-items: this property is useful for cross-axis alignment. for row flex it aligns items vertically ( this is a flex property, for grid, align-content may work)
+  - strech: default property, vertically takes up the whole space
+  - start: takes up only required space from top
+  - end: reverse of start
+  - center: aligns vertically to center
+    > > Note: for alignining there are two types, items & content. distinction is not clear at moment, but both can be tried, one should work. If it does not work then check if the items in container have fixed height and width.
 
 > Q. Why does my search bar and search button have different hieght when their values are same?
 

@@ -39,6 +39,7 @@
 - once a div is set to flex, then its child items automatically become flex-items
 - flex: 1, this is equivalent to 1fr of grid. Basically div takes the rest of available space
 - justify-content: this property helps in aligning flex items in the direction of flex. for row flex, it aligns items horizontally.
+- flex containers width can be controlled by flex property. eg. flex: 1. Flex containers are enclosed in mother container, whose display property should be eg. display: flex
 
   - center, aligns them at center
   - start,end are other options

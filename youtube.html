@@ -2,94 +2,10 @@
 <html>
 	<head>
 		<title>youtube.com</title>
-		<style>
-			p {
-				font-family: Roboto, Arial;
-				margin-top: 0;
-				margin-bottom: 0;
-			}
-			.home-page-grid {
-				display: grid;
-				grid-template-columns: 100px 1fr;
-			}
-			.user-menu {
-				display: flex;
-				flex-direction: column;
-				width: 100px;
-				row-gap: 60px;
-				align-items: center;
-			}
-			.menu-icon-img {
-				width: 40px;
-			}
-			.middle-section {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				max-width: 470px;
-				margin-left: 60px;
-			}
-			.search-bar {
-				flex: 1;
-				height: 40px;
-				padding-left: 12px;
-				font-size: 16px;
-				font: Roboto;
-				border: 1px solid #cccccc;
-				border-top-left-radius: 2px;
-				border-bottom-left-radius: 2px;
-				box-shadow: inset 0px 1px 2px #eeeeee;
-			}
-			.search-button {
-				width: 64px;
-				height: 40px;
-				border: 1px solid #cccccc;
-				border-top-right-radius: 2px;
-				border-bottom-right-radius: 2px;
-				flex: 0.2;
-				padding: 1px 6px;
-				margin-right: 8px;
-			}
-			.search-button img {
-				height: 24px;
-			}
-			.thumbnail {
-				width: 100%;
-			}
-			.video-grid {
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				column-gap: 20px;
-				row-gap: 20px;
-				background-color: #ede9dd;
-			}
-			.video-title {
-				color: rgb(0, 0, 0);
-				font-size: 14px;
-				font-weight: 500;
-				line-height: 18px;
-				margin-bottom: 10px;
-			}
-			.channel-name,
-			.video-stats {
-				color: #606060;
-				font-size: 12px;
-			}
-			.video-info-grid {
-				display: grid;
-				grid-template-columns: 50px 1fr;
-			}
-			.channel-name {
-				margin-bottom: 4px;
-			}
-			.thumbnail-row {
-				margin-bottom: 12px;
-			}
-			.profile-picture {
-				width: 40px;
-				border-radius: 50px;
-			}
-		</style>
+		<style></style>
+		<link rel="stylesheet" href="styles/general.css" />
+		<link rel="stylesheet" href="styles/video.css" />
+		<link rel="stylesheet" href="styles/header.css" />
 		<body>
 			<div class="home-page-grid">
 				<div class="user-menu">
@@ -102,9 +18,18 @@
 					<div class="menu-icon"><img class="menu-icon-img" src="menu-icons/library.svg" alt="" /></div>
 				</div>
 				<div class="search-content">
-					<div class="middle-section">
-						<input class="search-bar" type="text" placeholder="Search" />
-						<button class="search-button"><img src="icons/search.svg" /></button>
+					<div class="header">
+						<div class="header-left"><img class="youtube-icon" src="icons/youtube-logo.svg" alt="" /></div>
+						<div class="header-center">
+							<input class="search-bar" type="text" placeholder="Search" />
+							<button class="search-button"><img src="icons/search.svg" /></button>
+						</div>
+						<div class="header-right">
+							<div class="header-right-icon"><img class="header-right-icon-img" src="icons/upload.svg" alt="" /></div>
+							<div class="header-right-icon"><img class="header-right-icon-img" src="icons/youtube-apps.svg" alt="" /></div>
+							<div class="header-right-icon"><img class="header-right-icon-img" src="icons/notifications.svg" alt="" /></div>
+							<div class="header-right-icon"><img class="header-right-icon-img" src="icons/my-channel.jpeg" alt="" /></div>
+						</div>
 					</div>
 					<div class="video-grid">
 						<div class="video-preview">
